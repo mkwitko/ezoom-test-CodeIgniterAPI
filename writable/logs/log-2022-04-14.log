@@ -1,0 +1,76 @@
+CRITICAL - 2022-04-14 07:56:16 --> Call to undefined method CodeIgniter\Router\RouteCollection::resouce()
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(713): require()
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\spark(63): CodeIgniter\CLI\Console->run()
+#5 {main}
+CRITICAL - 2022-04-14 07:56:41 --> Call to undefined method CodeIgniter\Router\RouteCollection::resouce()
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(713): require()
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\spark(63): CodeIgniter\CLI\Console->run()
+#5 {main}
+CRITICAL - 2022-04-14 09:01:12 --> syntax error, unexpected token "@", expecting "function" or "const"
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('users/create/')
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('users/create/')
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#6 {main}
+CRITICAL - 2022-04-14 09:09:14 --> Cannot call constructor
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(809): App\Controllers\Users->__construct()
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#5 {main}
+ERROR - 2022-04-14 15:48:36 --> Column 'image' cannot be null
+CRITICAL - 2022-04-14 15:48:36 --> Column 'image' cannot be null
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ne...', 0)
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\app\Controllers\Newss.php(90): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(832): App\Controllers\Newss->create()
+#10 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Newss))
+#11 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#14 {main}
+CRITICAL - 2022-04-14 15:50:16 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\BaseModel.php(963): CodeIgniter\Model->doDelete('0', false)
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\app\Controllers\Newss.php(167): CodeIgniter\BaseModel->delete('0')
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(832): App\Controllers\Newss->delete('0')
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Newss))
+#5 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#8 {main}
+CRITICAL - 2022-04-14 15:50:31 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\BaseModel.php(963): CodeIgniter\Model->doDelete('0', false)
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\app\Controllers\Newss.php(167): CodeIgniter\BaseModel->delete('0')
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(832): App\Controllers\Newss->delete('0')
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Newss))
+#5 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#8 {main}
+CRITICAL - 2022-04-14 15:50:53 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\BaseModel.php(963): CodeIgniter\Model->doDelete('0', false)
+#2 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\app\Controllers\Newss.php(167): CodeIgniter\BaseModel->delete('0')
+#3 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(832): App\Controllers\Newss->delete('0')
+#4 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Newss))
+#5 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Kwitko\Desktop\Programação\EZoom\crud-api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#8 {main}

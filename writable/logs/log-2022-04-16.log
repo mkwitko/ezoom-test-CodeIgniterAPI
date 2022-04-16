@@ -1,0 +1,63 @@
+CRITICAL - 2022-04-16 13:02:25 --> Class "CodeIgniter\Cache\CacheFactory" not found
+#0 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Config\BaseService.php(248): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#1 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('cache', Array)
+#2 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Config\Services.php(101): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#3 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Config\BaseService.php(248): CodeIgniter\Config\Services::cache()
+#4 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Common.php(67): CodeIgniter\Config\BaseService::__callStatic('cache', Array)
+#5 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(604): cache()
+#6 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(313): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#7 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\spark(63): CodeIgniter\CLI\Console->run()
+#9 {main}
+CRITICAL - 2022-04-16 14:29:27 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Config\Routes.php on line 35 and at least 2 expected
+#0 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Config\Routes.php(35): CodeIgniter\Router\RouteCollection->get('users')
+#1 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(713): require('C:\\Users\\Kwitko...')
+#2 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#6 {main}
+CRITICAL - 2022-04-16 14:34:54 --> Cannot modify header information - headers already sent by (output started at C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Config\Events.php:32)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\Users\\Kwitko...', 12)
+#1 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Controllers\Users.php(12): header('Access-Control-...')
+#2 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Autoloader\Autoloader.php(264): include_once('C:\\Users\\Kwitko...')
+#3 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Kwitko...')
+#4 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#7 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#8 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\public\index.php(39): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#11 {main}
+CRITICAL - 2022-04-16 14:34:54 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Config\Events.php:32) in C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Debug\Exceptions.php:112
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\Users\\Kwitko...', 112)
+#1 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Debug\Exceptions.php(112): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 14:35:11 --> Cannot modify header information - headers already sent by (output started at C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Config\Events.php:32)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\Users\\Kwitko...', 9)
+#1 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Controllers\Newss.php(9): header('Access-Control-...')
+#2 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Autoloader\Autoloader.php(264): include_once('C:\\Users\\Kwitko...')
+#3 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Kwitko...')
+#4 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#7 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#8 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\public\index.php(39): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Kwitko...')
+#11 {main}
+CRITICAL - 2022-04-16 14:35:11 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\app\Config\Events.php:32) in C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Debug\Exceptions.php:112
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\Users\\Kwitko...', 112)
+#1 C:\Users\Kwitko\Desktop\Programacao\EZoom\ezoom-test-CodeIgniterAPI\system\Debug\Exceptions.php(112): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

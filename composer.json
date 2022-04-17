@@ -14,7 +14,9 @@
         "chriskacerguis/codeigniter-restserver": "^3.1",
         "kint-php/kint": "^4.0",
         "laminas/laminas-escaper": "^2.9",
-        "psr/log": "^1.1"
+        "psr/log": "^1.1",
+        "ext-mysqli": "*",
+        "monolog/monolog": "1.2.*"
     },
     "require-dev": {
         "codeigniter/coding-standard": "1.2.*",
